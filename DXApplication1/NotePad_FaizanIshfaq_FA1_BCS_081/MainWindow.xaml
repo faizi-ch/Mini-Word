@@ -1,0 +1,48 @@
+﻿<dx:DXWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" xmlns:dxre="http://schemas.devexpress.com/winfx/2008/xaml/richedit" x:Class="NotePad_FaizanIshfaq_FA1_BCS_081.MainWindow"
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <DockPanel>
+                <dxr:RibbonControl DockPanel.Dock="Top">
+                <dxr:RibbonControl.ToolbarItems>
+                    <dxb:BarButtonItem x:Name="UndoButton" ToolTip="Undo" Glyph="pack://application:,,,/DevExpress.Images.v17.1;component/DevAV/Actions/ResetChanges_16x16.png" ItemClick="UndoButton_ItemClick"/>
+                    <dxb:BarButtonItem x:Name="RedoButton" ToolTip="Redo"  Glyph="pack://application:,,,/DevExpress.Images.v17.1;component/DevAV/Actions/Redo_16x16.png" ItemClick="RedoButton_ItemClick"/>
+                </dxr:RibbonControl.ToolbarItems>
+                <dxr:RibbonDefaultPageCategory Caption="defaultCategory">
+                        <dxr:RibbonPage Caption="Home">
+                            <dxr:RibbonPageGroup Caption="File">
+                            <dxb:BarButtonItem Content="New" RibbonStyle="Large" Glyph="pack://application:,,,/DevExpress.Images.v17.1;component/DevAV/Actions/NewDoc_32x32.png" ItemClick="NewBarButtonItem_ItemClick"/>
+                            <dxb:BarButtonItem Content="Open" RibbonStyle="Large" Glyph="pack://application:,,,/DevExpress.Images.v17.1;component/DevAV/Actions/OpenDoc_32x32.png" ItemClick="OpenBarButtonItem_ItemClick"/>
+                            <dxb:BarButtonItem x:Name="SaveButton" Content="Save" Glyph="pack://application:,,,/DevExpress.Images.v17.1;component/DevAV/Actions/Save_32x32.png" RibbonStyle="Large" ItemClick="SaveBarButtonItem_ItemClick"/>
+                            <dxb:BarButtonItem Content="Save As" Glyph="pack://application:,,,/DevExpress.Images.v17.1;component/DevAV/Actions/SaveAs_32x32.png" RibbonStyle="Large" ItemClick="SaveAsBarButtonItem_ItemClick"/>
+                        </dxr:RibbonPageGroup>
+                        <dxr:RibbonPageGroup Caption="Application">
+                            <dxb:BarButtonItem Content="Exit" Glyph="pack://application:,,,/DevExpress.Images.v17.1;component/DevAV/Actions/Close_32x32.png" RibbonStyle="Large" ItemClick="BarButtonItem_ItemClick"/>
+                        </dxr:RibbonPageGroup>
+                    </dxr:RibbonPage>
+                    </dxr:RibbonDefaultPageCategory>
+                </dxr:RibbonControl>
+            <dxr:RibbonStatusBarControl DockPanel.Dock="Bottom" >
+                <dxr:RibbonStatusBarControl.RightItems>
+                    <dxb:BarCheckItem x:Name="HorizontalRulerCheckButton" IsChecked="True" Glyph="{dx:DXImageOffice2013 Image=AlignHorizontalTop_32x32.png}" IsStylusCaptureWithinChanged="HorizontalRulerCheckButton_IsStylusCaptureWithinChanged"/>
+                    <dxb:BarCheckItem x:Name="VerticalRulerCheckButton" IsChecked="True" Glyph="{dx:DXImageOffice2013 Image=AlignVerticalLeft_32x32.png}" ItemClick="VerticalRulerCheckButton_ItemClick"/>
+                </dxr:RibbonStatusBarControl.RightItems>
+                <dxr:RibbonStatusBarControl.LeftItems>
+                    <dxb:BarStaticItem x:Name="CharactersCountBarStaticItem" Content="Characters: "/>
+                    <dxb:BarStaticItem x:Name="WordsCountBarStaticItem" Content="Words: "/>
+                    <dxb:BarStaticItem x:Name="LinesCountBarStaticItem" Content="Lines: "/>
+                </dxr:RibbonStatusBarControl.LeftItems>
+            </dxr:RibbonStatusBarControl>
+            <Grid>
+                
+
+                <dxre:RichEditControl x:Name="RichTextBox"  ActiveViewType="PrintLayout" AutoSizeMode="Both" TextChanged="RichTextBox_TextChanged" />
+                
+            </Grid>
+        </DockPanel>
+    </Grid>
+</dx:DXWindow>

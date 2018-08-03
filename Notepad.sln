@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notepad", "Notepad.csproj", "{036AC2A4-06FB-48EA-8ECD-2BFB1ED56512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotePad_FaizanIshfaq_FA1_BCS_081", "DXApplication1\NotePad_FaizanIshfaq_FA1_BCS_081\NotePad_FaizanIshfaq_FA1_BCS_081.csproj", "{8763D10C-D5F7-495D-A781-8F9127A534FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{036AC2A4-06FB-48EA-8ECD-2BFB1ED56512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036AC2A4-06FB-48EA-8ECD-2BFB1ED56512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036AC2A4-06FB-48EA-8ECD-2BFB1ED56512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036AC2A4-06FB-48EA-8ECD-2BFB1ED56512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8763D10C-D5F7-495D-A781-8F9127A534FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8763D10C-D5F7-495D-A781-8F9127A534FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8763D10C-D5F7-495D-A781-8F9127A534FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8763D10C-D5F7-495D-A781-8F9127A534FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
